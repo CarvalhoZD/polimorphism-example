@@ -1,11 +1,11 @@
 import { Animal } from "./Animal";
 
-class Bird extends Animal {
+abstract class Bird extends Animal {
     public canFly: boolean;
 
-    constructor (name:string, lifetime: number, size: number, weight: number, canFLy: boolean) {
+    constructor (name:string, lifetime: number, size: number, weight: number, canFly: boolean) {
         super(name, lifetime, size, weight);
-        this.canFly = canFly
+        this.canFly = canFly;
 
     }
 }
